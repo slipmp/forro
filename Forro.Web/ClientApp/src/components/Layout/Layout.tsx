@@ -1,12 +1,13 @@
 import * as React from 'react';
-import { Container } from 'reactstrap';
-import NavMenu from './NavMenu';
+import Header from '../Header/Header';
+import Footer from '../Footer';
 
 export default (props: { children?: React.ReactNode }) => (
     <React.Fragment>
-        <NavMenu/>
-        <Container>
+        <div id="page-wrapper">
+            <Header />
             {props.children}
-        </Container>
+            <Footer />
+        </div>
     </React.Fragment>
 );
