@@ -1,22 +1,27 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
+import ForroMoves from '../ForroMoves/ForroMoves';
 
 import img03 from './img-03.jpg';
 import img04 from './img-04.jpg';
 import img05 from './img-05.jpg';
 
 const Home = () => (
-    //MAIN 
     <main role="main">
         <article>
             <header className="section-top-padding background-white">
                 <div className="line text-center">
                     <h1 className="text-dark text-s-size-30 text-m-size-40 text-l-size-headline text-thin text-line-height-1">About Us</h1>
-                    <p className="margin-bottom-0 text-size-16 text-dark">
-                        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.<br />
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
+                    <p className="text-size-16 text-dark">
+                        Enjoy Forró moves from various schools in the world!
+                    </p>
                 </div>
             </header>
+            <section>
+                <div className="line">
+                    <ForroMoves/>
+                </div>
+            </section>
             <section className="section-top-padding background-white">
                 <div className="line">
                     <div className="margin">
@@ -40,8 +45,6 @@ const Home = () => (
             </section>
         </article>
     </main>
-
-
 );
 
 export default connect()(Home);

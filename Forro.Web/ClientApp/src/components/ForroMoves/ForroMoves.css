@@ -1,0 +1,29 @@
+﻿#ForroMoves {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#ForroMoves td, #customers thead {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#ForroMoves tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#ForroMoves tbody tr:hover {
+    background-color: #ddd;
+}
+
+#ForroMoves thead {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #282828;
+    color: white;
+}
+
+.responsiveTable {
+    overflow-x: auto;
+}
