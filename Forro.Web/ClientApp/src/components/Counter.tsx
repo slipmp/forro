@@ -13,7 +13,6 @@ class Counter extends React.PureComponent<CounterProps> {
     public render() {
         return (
             <React.Fragment>
-
                 <main role="main">
                     <article>
                         <header className="section-top-padding background-white">

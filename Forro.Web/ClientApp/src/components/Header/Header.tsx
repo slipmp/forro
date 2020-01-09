@@ -1,11 +1,12 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { RouteComponentProps } from 'react-router';
 
 import { Link, withRouter } from 'react-router-dom';
 import Logo from './logo-dark.png';
 
 
-function Header(props: any) {
+function Header(props: RouteComponentProps) {
     function Toggle(name: string):string {
         if (name === 'Home' && props.location.pathname === '/')
             return 'active-item';
