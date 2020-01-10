@@ -55,6 +55,12 @@ class FetchData extends React.PureComponent<WeatherForecastProps> {
 
     private ensureDataFetched() {
         const startDateIndex = parseInt(this.props.match.params.startDateIndex, 10) || 0;
+
+        //Don't fool yourself, this is a THUNK
+        //https://daveceddia.com/what-is-a-thunk/
+        //Also, this is an Action creator, currently being mapped through mapDispatchToProps, a react-redux functionality
+        //Because requestWeatherForecasts returns a THUNK (a.k.a function) it is being intercepted by react-thunk
+        //which uses dependency injection to magically inject dispatch, getState
         this.props.requestWeatherForecasts(startDateIndex);
     }
 

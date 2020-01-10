@@ -15,6 +15,14 @@ export const reducers = {
     weatherForecasts: WeatherForecasts.reducer
 };
 
+
+//My notes in regards the interface below.
+//...In addition to describing an object with properties, interfaces are also capable of describing function types.
+//To describe a function type with an interface, we give the interface a call signature.
+//This is like a function declaration with only the parameter list and return type given.
+//Each parameter in the parameter list requires both name and type.
+//Reference: https://www.typescriptlang.org/docs/handbook/interfaces.html
+
 // This type can be used as a hint on action creators so that its 'dispatch' and 'getState' params are
 // correctly typed to match your store.
 export interface AppThunkAction<TAction> {
